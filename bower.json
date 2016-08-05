@@ -1,0 +1,7 @@
+{
+	"name": "thunbolt",
+	"dependencies": {
+		"nette-forms": ">=2.4",
+		"jquery": ">=1.6"
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"all": {
+		"before": [
+			"client/helpers.js",
+			"client/life-cycle/init.js"
+		]
+	},
+	"js": {
+		"forms.errors": [
+			"client/modules/form.errors.js",
+			"client/modules/form-errors/bootstrap.js"
+		]
+	}
+}
