@@ -166,6 +166,7 @@ Thunbolt.FormErrors = _tmp;
 			}
 		},
 		renderControl: function (el, message) {
+			this.removeControlError(el);
 			el = $(el);
 			var target, attr = el.attr('data-errors-target');
 			if (helpers.isUndefined(attr) || !attr) {
@@ -189,7 +190,7 @@ Thunbolt.FormErrors = _tmp;
 			ctrl = $(ctrl);
 			var target = ctrl.attr('data-errors-target');
 			if (helpers.isUndefined(target) || !target) {
-				ctrl.next().remove();
+				ctrl.next('[data-has-error-rendered]').remove();
 			} else {
 				$(target).text('');
 			}
